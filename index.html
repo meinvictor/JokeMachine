@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div id="mount"></div>
+        
+        
+        <div id="time" class="animate__animated animate__fadeInDown animate__fast">
+            <div class="h">00:00</div>
+            <div class="w"> Good <span class="dayTime">________</span>, <span class="name">________</span></div>
+            <a href="main" class="mainScroll">
+                <img src="img/arrow.svg" alt="arrow" width="30" />
+            </a>
+        </div>
+     
+        <form class="formName" >
+            <div id="name" class="animate__animated animate__fadeInUp">
+                <input type="text" placeholder="What's your name?" class="nameInp"/>
+            </div>
+        </form>
+   
+   
+    </header>
+
+    <main>
+        <div class="insult">
+            <p></p>
+        </div>
+        
+        <div id="btns">
+          <button class="generateNew">NEW JOKE</button> <br>
+          <button class="laugh">LAUGH</button> 
+         </div>
+
+          <audio src="laugh.mp3"></audio>
+    </main>
+
+  <script src="script/script.js"> </script>
+
+ 
+
+</body>
+</html>

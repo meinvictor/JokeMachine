@@ -1,0 +1,15 @@
+@media screen and (max-width: 690px) {
+
+    header #time {
+        width: 100vw;
+        left: 0;
+    }
+
+    header #time .h {
+        font-size:  4em;
+    }
+
+    header #time .w {
+        font-size: 2em;
+    }
+}

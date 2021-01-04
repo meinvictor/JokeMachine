@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+* {
+    margin: 0;
+    padding:0;
+    cursor: default;
+}
+
+body {
+    background: #00131C;
+    height: 1500px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    animation: bodyScale 1s linear;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgba(71, 62, 165, 0.15)#003B64;
+    border-radius: 20px;
+    height: 200px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #003B64;
+    border-radius: 20px;
+}
+
+@keyframes bodyScale {
+    0% { transform: scale(1.010); }
+    100% { transform: scale(1); }
+}
+
+
+header {
+    width:100vw;
+    min-height: 100vh;
+    background-image: url(../img/mount.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header #mount {
+    width:100vw;
+    height: 55vh;
+    position:relative;
+    top: 50vh;
+    z-index: 2;
+    background-image: url(../img/mount-back.png); 
+}
+
+header #time {
+    text-align: center;
+    width: 50vw;
+    height: 28vh;
+    position: absolute;
+    top: 10vh; left: 25vw;
+    margin: 0 auto;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;    
+    display: none;  
+}
+
+header #time .h {
+    font: 6em 'Work Sans';
+    opacity: .8;
+    padding-bottom: 10px;
+}
+
+header #time .w {
+    font: 2.3em 'Work Sans';
+    opacity: .8;
+    padding-bottom: 25px;
+    opacity: .9;
+}
+
+.mainScroll img {
+    animation: arrowAnim 1.5s ease-in-out infinite;
+    position: relative;
+    opacity: .8;
+    cursor: pointer;
+    z-index: 3;
+}
+
+@keyframes arrowAnim{
+    0% {top: 0px;}
+    50% {top: 7px;}
+    100% {top:0px;}
+}
+
+#name {
+    width: 80vw;
+    height: 30vh;
+    position: absolute;
+    top:10vh; left:10vw;
+}
+
+#name input {
+    width: 100%;
+    background: none;
+    border:5px solid rgba(0,0,0, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+    font: bold 3em 'Work Sans';
+    text-align: center;
+    cursor:text;
+}
+input::-webkit-input-placeholder { color: black; opacity: .8; }
+
+
+
+main {
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    top: -50px;
+    z-index: 3;
+    padding-top: 10vh;
+}
+
+main .insult {
+    width: 40vw;
+    margin: 0 auto;
+    border: 5px solid white;
+    color: #fff;
+    padding: 2vw;
+}
+
+main .insult p {
+    font: 3em 'Work Sans';
+    text-align: center;
+}
+
+#btns {
+    width: 100vw;
+    height: 10vh;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#btns .laugh {
+    padding: 25px 60px;
+    width: 30vw;
+    background: none;
+    font: 2em 'Work Sans';
+    color:#fff;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+#btns .laugh:hover {
+    background: white;
+    color: black;
+    font-weight: bold;
+    transition: .2s all ease;
+}
+
+#btns .generateNew  {
+    padding: 25px 50px;
+    width: 30vw;
+    font: 2em 'Work Sans';
+    background: none;
+    color:#fff;
+    border: 3px solid white;
+    transition: .2s all ease;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#btns .generateNew:hover {
+    background: white;
+    color: black;
+    font-weight: bold;
+    transition: .2s all ease;
+}
